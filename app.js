@@ -199,3 +199,107 @@ printMessage('holiday',10);
 
 
 
+// 関数名：printMaxNum
+// 引数1：1つの数値
+// 引数2：1つの数値
+// 処理内容：引数で受け取った2つの数値のうち、最も大きな数値を出力する。
+
+function printMaxNum(num1, num2){
+	if(num1 > num2){
+		console.log(num1);
+	}else{
+		console.log(num2);
+		}
+}	
+printMaxNum(15,16)
+
+
+
+
+// 関数名：getSquared
+// 引数1：1つの数値
+// 処理内容：引数で受け取った数値の2乗を計算し返す
+
+// 例
+// var result = getSquared(4);
+// console.log(result);
+// 実行結果
+// 16
+
+
+function getSquared(num){
+	console.log(num * num);
+}
+
+getSquared(15)
+
+
+
+// 関数名：createSelfIntroductionText
+// 引数1：1つの文字列
+// 処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
+
+// 例
+// var message = createSelfIntroductionText("NexSeed");
+// console.log(message);
+// 実行結果
+// 私の名前はNexSeedです
+
+
+// function createSelfIntroductionText(text){
+
+// }
+
+
+
+
+// 関数名：isEvenNumber
+// 引数1：1つの数値
+// 処理内容：引数で渡された値が偶数の場合は true、そうでない場合は false を返す。
+
+// 例
+// var result = isEvenNumber(3);
+// console.log(result);
+// 実行結果
+// false
+
+function isEvenNumber(even){
+	if(even % 2 == 0){
+	console.log('true');
+	}else{
+		console.log('false');
+}
+}
+isEvenNumber(11);
+
+
+// 関数名：isSeedKun
+// 引数1：任意の文字列
+// 処理内容：引数で渡された文字列が「SeedKun」の場合は true、
+// そうでない場合は false を
+ function isSeedKun(namae){
+ 	if(namae == 'SeedKun'){
+ 		console.log('true');
+ 	}else{
+ 		console.log('false');
+ 	}
+ }
+
+isSeedKun('Seedchan');
+isSeedKun('Seedkun');
+isSeedKun('SeedKun');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
