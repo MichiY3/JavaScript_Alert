@@ -152,5 +152,50 @@ printKakezan(567,91);
 printKakezan(0,236);
 
 
+// 関数名：printIsEven
+// 引数：1つの数値
+// 処理内容：引数で受け取った数値が偶数の場合は「偶数です」と出力し、
+// 奇数の場合は「奇数です」と出力する
+
+function printIsEven(even){
+	// let messageSpan = document.getElementById('message2');
+ if(even % 2 == 0){
+// messageSpan.textContent = ('偶数です');
+// }else{messageSpan.textContent = ('奇数です');
+ 	console.log('偶数です');
+ } else{
+ 	console.log('奇数です');
+ }
+}
+printIsEven(3483);
+printIsEven(0);
+
+
+// 関数名：printMessage
+// 引数1：1つの文字列
+// 引数2：1つの数字
+// 処理内容：引数で受け取った文字列を、引数で受け取った数値分繰り返し出力する
+// 例）WORKを３回指定したら
+// WORK
+// WORK
+// WORKと出るけど、
+// console.logには③WORKと表示される
+
+
+
+// function printMessage(no,num);
+//  for ( let no= 1;  no<= num; no++){
+// 	console.log();
+// }
+
+// printMessage('work',2);
+
+function printMessage(moji, num){
+	for(let i = 1 ; i <= num; i++)
+	console.log(moji);
+}
+
+printMessage('holiday',10);
+
 
 
