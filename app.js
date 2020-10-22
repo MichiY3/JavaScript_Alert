@@ -246,10 +246,11 @@ getSquared(15)
 // 私の名前はNexSeedです
 
 
-// function createSelfIntroductionText(text){
+function createSelfIntroductionText(name){
+	console.log('『私の名前は'  + name + 'です」');
+}
 
-// }
-
+createSelfIntroductionText('Michi')
 
 
 
