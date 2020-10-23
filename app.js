@@ -210,6 +210,10 @@ function printMaxNum(num1, num2){
 	}else{
 		console.log(num2);
 		}
+	// else if(num1 < num2 );{
+	// }else{
+	// 	console.log('同じ')
+	// }
 }	
 printMaxNum(15,16)
 
@@ -233,6 +237,15 @@ function getSquared(num){
 
 getSquared(15)
 
+// 戻り値（返り値） return 値；の形で、実行した側に戻される値
+// 引数と逆方向に値を送る（返す)
+
+// function getSquares(num){
+// 	return num * num;
+// }
+// var result = getSquared(5);
+// console.log(result);
+
 
 
 // 関数名：createSelfIntroductionText
@@ -250,7 +263,21 @@ function createSelfIntroductionText(name){
 	console.log('『私の名前は'  + name + 'です」');
 }
 
-createSelfIntroductionText('Michi')
+createSelfIntroductionText('Michi');
+
+
+function createSelfIntroductionText(name){
+	var msg = "私の名前は" + name + "です";
+	return msg;
+}
+// let 変数名：再宣言ができない、再代入できる
+// var　変数名：再宣言・再代入ができる
+// const 定数名：再宣言。再代入ができない
+
+const COMPANY = 'NexSeed';
+var message = createSelfIntroductionText("NexSeed");
+console.log(message);
+
 
 
 
@@ -274,6 +301,19 @@ function isEvenNumber(even){
 isEvenNumber(11);
 
 
+var result =isEvenNumber(99);
+function isEvenNumber(even){
+	if(even % 2 == 0){
+		return true;
+	}else{
+		return false;
+}
+}
+console.log(result);
+
+
+
+
 // 関数名：isSeedKun
 // 引数1：任意の文字列
 // 処理内容：引数で渡された文字列が「SeedKun」の場合は true、
@@ -291,10 +331,18 @@ isSeedKun('Seedkun');
 isSeedKun('SeedKun');
 
 
+var result = isSeedKun('Seedchan');
+var result = isSeedKun('Seedkun');
+var result = isSeedKun('SeedKun');
+function isSeedKun(str){
+ 	if(str == 'SeedKun'){
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
 
-
-
-
+console.log(result);
 
 
 
